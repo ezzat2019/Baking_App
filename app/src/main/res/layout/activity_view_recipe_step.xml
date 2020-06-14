@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context=".ViewRecipeStepActivity">
+
+    <ImageView
+        android:id="@+id/img_no"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/no_video"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:onClick="previous"
+            android:scaleType="fitXY"
+            android:src="@drawable/exo_controls_previous" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:onClick="next"
+            android:scaleType="fitXY"
+            android:src="@drawable/exo_controls_next" />
+
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:titleTextColor="#fff" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/video_view"
+        android:layout_margin="15dp"
+
+        android:elevation="12dp"
+        app:cardCornerRadius="15dp">
+
+        <TextView
+            android:id="@+id/txt_step_ins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_intgradines_main"
+            android:background="@color/colorPrimary"
+            android:padding="15dp"
+            android:paddingTop="5dp"
+
+
+            android:text="@string/no_data"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="15dp"
+        android:background="#000" />
+
+
+</RelativeLayout>

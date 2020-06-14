@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Baking App</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_data">No Data Error !</string>
+    <string name="appwidget_text">No Data Avalible yet</string>
+    <string name="add_widget">Add widget</string>
+    <string name="item_two"> ingredient (1) sifted cake flour
+    ingredient (2) granulated sugar
+    ingredient (3) baking powder
+    ingredient (4) salt
+    ingredient (5) vanilla extract, divided
+    ingredient (6) egg yolks
+    ingredient (7) whole milk
+    ingredient (8) unsalted butter, softened and cut into 1 in. cubes
+    ingredient (9) egg whites
+    ingredient (10) melted and cooled bittersweet or semisweet chocolate</string>
+</resources>

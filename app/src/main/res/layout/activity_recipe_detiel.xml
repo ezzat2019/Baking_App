@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backGroundMAin"
+        tools:context=".RecipeDetielActivity">
+
+
+        <TextView
+            android:id="@+id/txt_intgradines_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Recipe Intgradintes :"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <TextView
+            android:id="@+id/txt_steps_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card"
+            android:layout_marginLeft="10dp"
+            android:text="Steps :"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_intgradines_main"
+            android:layout_margin="12dp"
+
+            android:elevation="12dp"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:id="@+id/txt_intgradines"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_intgradines_main"
+                android:background="@color/colorPrimary"
+                android:padding="5dp"
+                android:paddingTop="5dp"
+
+
+                android:text="@string/no_data"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/rec_steps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/txt_steps_main"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp" />
+
+
+    </RelativeLayout>
+</ScrollView>
